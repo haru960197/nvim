@@ -20,3 +20,8 @@ vim.keymap.set("n", "<C-l>", "<cmd>bnext<CR>")
 
 -- lazy
 require("config.lazy")
+
+-- for diagnostic
+vim.keymap.set('n', '<leader>d', function()
+  vim.diagnostic.open_float(nil, { focus = true })
+end, { desc = 'Show diagnostics under cursor' })

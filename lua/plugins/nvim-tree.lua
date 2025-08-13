@@ -21,7 +21,11 @@ return {
       git = {
         enable = true,
         ignore = true,
-      }
+      },
+      filters = {
+        dotfiles = false,
+        git_ignored = false,
+      },
     }
   end,
 }
